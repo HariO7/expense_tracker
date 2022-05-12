@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
 
 function Balance() {
-  const [balance, setbalance] = useState(1000);
+  const balance = useSelector((state) => state.balance);
   return (
     <div>
       <h1>Expense Tracker</h1>
