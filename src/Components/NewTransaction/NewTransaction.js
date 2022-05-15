@@ -9,7 +9,7 @@ function NewTransaction() {
   const onSubmitHandler = (event) => {
     event.preventDefault();
     const inputText = inputRef.current.value;
-    const inputAmount = amountRef.current.value;
+    const inputAmount = parseInt(amountRef.current.value);
     dispatch({
       type: "addinginput",
       value: { inputText: inputText, inputAmount: inputAmount },
