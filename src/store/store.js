@@ -1,8 +1,13 @@
 import { createStore } from "redux";
 
-const initialState = { balance: 0 };
+const initialState = { balance: 0, transaction: [] };
 
 const balenceReducer = (state = initialState, action) => {
+  if (action.type === "addinginput") {
+    return {
+      transaction: [...state.transaction, action.value],
+    };
+  }
   return state;
 };
 
