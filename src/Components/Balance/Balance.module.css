@@ -1,0 +1,47 @@
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+  }
+  
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .incexpcontainer {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.incexpcontainer > div {
+  flex: 1;
+  text-align: center;
+}
+
+.incexpcontainer > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.moneyplus{
+    font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  color: #2ecc71;
+}
+
+.moneyminus{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    color: #c0392b;
+}
